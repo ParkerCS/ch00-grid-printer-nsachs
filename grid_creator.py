@@ -161,13 +161,13 @@ Another example: print_grid2(5,3):
 + - - - + - - - + - - - + - - - + - - - +
 '''
 def print_grid2(a, b):
-    for j in range(a):
-        print("+" + ((" -" * int(b)) + " +")* a, end = " ")
+    for j in range(int(a)):
+        print("+" + ((" -" * int(b)) + " +") * int(a), end = " ")
         print()
         for i in range(int(b)):
-            print("|" + (("  " * int(b)) + " |")* a, end = " ")
+            print("|" + (("  " * int(b)) + " |")* int(a), end = " ")
             print()
-    print("+" + ((" -" * int(b)) + " +") * a, end=" ")
+    print("+" + ((" -" * int(b)) + " +") * int(a), end=" ")
 
 print_grid2(3,4)
 print()
