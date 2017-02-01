@@ -35,6 +35,8 @@ You can also multiply strings:
 '+' * 10 ===> '++++++++++'
 '''
 
+# just playing around and testing how I could create a some grids without functions.
+print("This first box is just a test.")
 
 print(("+" + (" -" * 4) + "+") + ("+" + (" -" * 4) + "+"))
 print((("|" + (" " * 8)) * 2) + "|")
@@ -87,7 +89,24 @@ print_grid(15) prints a larger grid:
 |               |               |
 |               |               |
 + - - - - - - - + - - - - - - - +
+'''
+#I struggled with figuring out int(n/2), but
 
+def print_grid(n):
+    for i in range(2):
+        print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
+        print()
+        for j in range(int(n / 2)):
+            print("|" + (("  " * int(n / 2)) + " |") * 2, end = " ")
+            print()
+    print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
+
+print_grid(3)
+print()
+print_grid(15)
+print()
+
+'''
 Part 3:
 Even more general...
 
