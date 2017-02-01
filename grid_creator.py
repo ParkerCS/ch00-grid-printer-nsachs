@@ -38,12 +38,12 @@ You can also multiply strings:
 # just playing around and testing how I could create a some grids without functions.
 print("This first box is just a test.")
 
-print(("+" + (" -" * 4) + "+") + ("+" + (" -" * 4) + "+"))
+print(("+" + (" -" * 4) + (" +" + (" -" * 4) + "+")))
 print((("|" + (" " * 8)) * 2) + "|")
 print((("|" + (" " * 8)) * 2) + "|")
 print((("|" + (" " * 8)) * 2) + "|")
 print((("|" + (" " * 8)) * 2) + "|")
-print(("+" + (" -" * 4) + "+") * 2)
+print((" +" + (" -" * 4) * 2))
 print((("|" + (" " * 8)) * 2) + "|")
 print((("|" + (" " * 8)) * 2) + "|")
 print((("|" + (" " * 8)) * 2) + "|")
@@ -90,7 +90,7 @@ print_grid(15) prints a larger grid:
 |               |               |
 + - - - - - - - + - - - - - - - +
 '''
-# I struggled with this problem - I'm not sure how to fix it so the rows and columns are shorter.
+# I struggled with this problem - I'm not sure how to fix it so the rows and columns are shorter.  I got some help from Franny, but I still wasn't able to figure it out completely.
 def print_grid(n):
     for i in range(2):
         print("+" + ((" -" * int(n)) + " +") * 2, end=" ")
