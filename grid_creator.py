@@ -90,7 +90,6 @@ print_grid(15) prints a larger grid:
 |               |               |
 + - - - - - - - + - - - - - - - +
 '''
-#I struggled with figuring out int(n/2), but
 
 def print_grid(n):
     for i in range(2):
@@ -101,6 +100,8 @@ def print_grid(n):
             print()
     print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
 
+print_grid(8)
+print()
 print_grid(3)
 print()
 print_grid(15)
