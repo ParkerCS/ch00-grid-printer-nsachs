@@ -90,7 +90,7 @@ print_grid(15) prints a larger grid:
 |               |               |
 + - - - - - - - + - - - - - - - +
 '''
-# I struggled with this problem - I'm not sure how to fix it so the rows and columns are shorter.  I got some help from Franny, but I still wasn't able to figure it out completely.
+# I struggled with getting the boxes all the right size (shrinking them)
 def print_grid(n):
     for i in range(2):
         print("+" + ((" -" * int(n)) + " +") * 2, end=" ")
@@ -161,10 +161,10 @@ Another example: print_grid2(5,3):
 + - - - + - - - + - - - + - - - + - - - +
 '''
 def print_grid2(a, b):
-    for j in range(int(a)):
+    for j in range(int(a)): #a represenets the width/height dimensions
         print("+" + ((" -" * int(b)) + " +") * int(a), end = " ")
         print()
-        for i in range(int(b)):
+        for i in range(int(b)): #b represents the number of "-" or "|" in each smaller box
             print("|" + (("  " * int(b)) + " |")* int(a), end = " ")
             print()
     print("+" + ((" -" * int(b)) + " +") * int(a), end=" ")
