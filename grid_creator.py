@@ -90,15 +90,15 @@ print_grid(15) prints a larger grid:
 |               |               |
 + - - - - - - - + - - - - - - - +
 '''
-
+# I struggled with this problem - I'm not sure how to fix it so the rows and columns are shorter.
 def print_grid(n):
     for i in range(2):
-        print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
+        print("+" + ((" -" * int(n)) + " +") * 2, end=" ")
         print()
-        for j in range(int(n / 2)):
-            print("|" + (("  " * int(n / 2)) + " |") * 2, end = " ")
+        for j in range(int(n)):
+            print("|" + (("  " * int(n)) + " |") * 2, end = " ")
             print()
-    print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
+    print("+" + ((" -" * int(n)) + " +") * 2, end=" ")
 
 print_grid(8)
 print()
