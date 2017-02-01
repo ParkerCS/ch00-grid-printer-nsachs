@@ -107,6 +107,8 @@ print()
 print_grid(15)
 print()
 
+print()
+
 '''
 Part 3:
 Even more general...
@@ -158,5 +160,17 @@ Another example: print_grid2(5,3):
 |       |       |       |       |       |
 + - - - + - - - + - - - + - - - + - - - +
 '''
+def print_grid2(a, b):
+    for j in range(a):
+        print("+" + ((" -" * int(b)) + " +")* a, end = " ")
+        print()
+        for i in range(int(b)):
+            print("|" + (("  " * int(b)) + " |")* a, end = " ")
+            print()
+    print("+" + ((" -" * int(b)) + " +") * a, end=" ")
 
+print_grid2(3,4)
+print()
+print_grid2(5, 3)
+print()
 
