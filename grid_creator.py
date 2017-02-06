@@ -1,3 +1,5 @@
+# nice work.  Shouldn't need the print() statement between the calls.  This should be part of the function.
+
 '''
 Grid Printer Exercise
 Printing a Grid (adapted from Downey, “Think Python”, ex. 3.5)
@@ -168,9 +170,10 @@ def print_grid2(a, b):
             print("|" + (("  " * int(b)) + " |")* int(a), end = " ")
             print()
     print("+" + ((" -" * int(b)) + " +") * int(a), end=" ")
+    print()
 
 print_grid2(3,4)
-print()
+#print()
 print_grid2(5, 3)
-print()
+#print()
 
